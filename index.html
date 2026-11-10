@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aniruddha Mukhopadhyay | ASP.NET Core Developer</title>
+<meta name="description" content="Portfolio of Aniruddha Mukhopadhyay, ASP.NET Core developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo">Aniruddha<span>.</span></a>
+    <nav id="menu" aria-label="Main">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <button id="themeBtn" class="icon-btn" aria-label="Switch colour theme">◐</button>
+    <button id="menuBtn" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <p class="hello">Hello, I'm</p>
+      <h1>Mr. Aniruddha Mukhopadhyay</h1>
+      <p class="roles"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+      <p class="lead">ASP.NET Core Developer with 4+ years of professional software development experience and recent expertise in modern backend architecture including ASP.NET Core, Clean Architecture, Microservices, Docker, PostgreSQL, MongoDB, Redis and Azure. Passionate about building scalable cloud-ready applications and continuously learning modern technologies.</p>
+      <div class="actions">
+        <a class="btn primary" href="documents/resume.pdf" download>Download CV</a>
+        <a class="btn ghost" href="#contact">Hire Me</a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="images/profile.jpg" alt="Portrait of Aniruddha Mukhopadhyay" width="720" height="900" onerror="this.remove()">
+      <span class="initials" aria-hidden="true">AM</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap">
+    <h2>About me</h2>
+    <div class="grid3">
+      <article class="card"><h3>Introduction</h3><p>Hello, Aniruddha here. I hold a Master's in Computer Applications (MCA) and have 3+ years of IT experience. My father is retired, my mother has passed away, and my sisters work abroad.</p></article>
+      <article class="card"><h3>Education</h3>
+        <ul class="timeline">
+          <li><b>MCA</b> KIIT University, 2012</li>
+          <li><b>BCA</b> MAKAUT, 2009</li>
+          <li><b>12th (Science)</b> 2006</li>
+          <li><b>10th (Science)</b> 2004</li>
+        </ul></article>
+      <article class="card"><h3>Objective &amp; interests</h3><p>I want to work in IT and office jobs abroad. Outside work I enjoy the gym, gaming and self-love.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec alt">
+  <div class="wrap">
+    <h2>My skills</h2>
+    <ul class="chips">
+      <li>ASP.NET</li><li>C#</li><li>MVC</li><li>LINQ</li><li>REST API</li><li>Web Services</li><li>Object-Oriented</li><li>SQL Server</li><li>SQL</li><li>Azure</li><li>Docker</li><li>HTML/CSS</li><li>JavaScript</li><li>Generative AI</li><li>Advanced MS Excel</li><li>Photoshop</li><li>Premiere Pro</li><li>Blender</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <div class="wrap">
+    <h2>My projects <small>January 2026 – present</small></h2>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="chip-btn active" data-filter="all">All</button>
+      <button class="chip-btn" data-filter="api">APIs</button>
+      <button class="chip-btn" data-filter="microservices">Microservices</button>
+      <button class="chip-btn" data-filter="ai">AI</button>
+    </div>
+    <div class="grid2" id="projectGrid"></div>
+  </div>
+</section>
+
+<section id="experience" class="sec alt">
+  <div class="wrap">
+    <h2>Work experience</h2>
+    <ol class="jobs" id="jobList"></ol>
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <div class="wrap contact">
+    <div>
+      <h2>Get in touch</h2>
+      <p>Have a role or project in mind? Send a message and I will reply by email.</p>
+      <ul class="links">
+        <li>Phone / WhatsApp: <a href="tel:+918240131626">8240131626</a></li>
+        <li>Email: <a href="mailto:aniruddha.mukhopadhyay4@gmail.com">aniruddha.mukhopadhyay4@gmail.com</a></li>
+        <li>Instagram: <a href="https://instagram.com/toni1962.dragon" target="_blank" rel="noopener">toni1962.dragon</a></li>
+      </ul>
+    </div>
+    <form id="contactForm" novalidate>
+      <label>Name<input name="name" type="text" autocomplete="name" required><span class="err" aria-live="polite"></span></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required><span class="err" aria-live="polite"></span></label>
+      <label>Message<textarea name="message" rows="5" required></textarea><span class="err" aria-live="polite"></span></label>
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hp">
+      <button class="btn primary" type="submit">Send message</button>
+      <p id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Aniruddha Mukhopadhyay</div></footer>
+<button id="toTop" class="to-top" aria-label="Back to top" hidden>↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
